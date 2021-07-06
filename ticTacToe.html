@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: yellow;
+        }
+        #winner {
+            display: flex;
+            position: absolute;
+            background-color: grey;
+            width: 400px;
+            height: 400px;
+            top: 75px;
+            z-index: -1;
+            font-size: 64px;
+            text-align: center;
+            align-items: center;
+        }
+        #scoreBoard {
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            padding: 10px 10px 10px 10px;
+            position: absolute;
+            width: 100px;
+            height: 400px;
+            background-color: black;
+            left: 0px;
+            word-wrap: break-word;
+        }
+        #top {
+            border: solid;
+            height: 50%;
+            background-color: grey;
+        }
+        #bottom {
+            border: solid;
+            height: 50%;
+            background-color: grey;
+        }
+        #title {
+            border: solid;
+            font-size: 48px;
+            margin-top: -8px;
+            margin-bottom: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: green;
+            color: white;
+            border-color: black;
+        }
+        #container {
+            display: grid;
+            height: 400px;
+            width: 400px;
+            background-color: grey;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            border: solid;
+        }
+        #container div {
+            border: solid;
+            line-height: 120px;
+            text-align: center;
+            font-size: 64px;
+        }
+    </style>
+</head>
+<body>
+    <div id=scoreBoard>
+        <div id="top"></div>
+        <div id="bottom"></div>
+    </div>
+    <div id="winner"><div><b>Player 1 Wins!!!</b></div></div>
+    <div id="title">Tic Tac Toe</div>
+    <div id="container">
+        <div id="o11"></div>     <div id="o12"></div>     <div id="o13"></div>
+        <div id="o21"></div>     <div id="o22"></div>     <div id="o23"></div>
+        <div id="o31"></div>     <div id="o32"></div>     <div id="o33"></div>
+    </div>
+    
+    <script src="ticTacToe.js"></script>
+</body>
+</html>
